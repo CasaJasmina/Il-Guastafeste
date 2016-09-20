@@ -1,0 +1,32 @@
+
+Amplifier
+VDD -> 5v
+GND -> GND
+L+ -> dac0
+L- -> GND
+G0 -> 2
+G1 -> 3
+
+Micro-SD
+
+3v -> VCC
+GND -> GND
+SCLK -> 9
+DO -> 10
+DI -> 8
+CS -> 4
+
+Microphone
+DO -> A1
++ -> 5v
+G -> GND
+
+Thermal Printer
+GND -> GND
+RX -> 14
+5v -> 5v
+
+Servo
+GND -> GND
+5v -> 5v
+D -> 5
