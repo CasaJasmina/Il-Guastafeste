@@ -11,8 +11,8 @@
 #include <ArduinoCloud.h>
 
 // Variables for WLAN Communication
-char *ssid = "qqd-61797";
-char *pass = "v6n7-v6k8-pkvo-nqvr";
+char *ssid = "";
+char *pass = "";
 
 // Arduino Cloud settings and credentials
 const char userName[]   = "dummknopf";

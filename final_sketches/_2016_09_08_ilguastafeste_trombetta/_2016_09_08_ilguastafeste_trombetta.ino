@@ -46,8 +46,8 @@ Adafruit_Thermal printer(&Serial1);
 #define RX_PIN 0 // Arduino receive
 
 // Variables for WLAN Communication
-char *ssid = "Sticazzi";
-char *pass = "87327394521381619959";
+char *ssid = "";
+char *pass = "";
 
 // Arduino Cloud settings and credentials
 const char userName[]   = "dummknopf";

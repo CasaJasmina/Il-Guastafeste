@@ -9,8 +9,8 @@
 #include <ArduinoCloud.h>
 
 // variables for WLAN Communication
-char *ssid = "Sticazzi";
-char *pass = "87327394521381619959";
+char *ssid = "";
+char *pass = "";
 
 // arduino cloud settings and credentials
 const char userName[]   = "dummknopf";
