@@ -60,7 +60,7 @@ void setup() {
 
 void loop() {
 
-  potVal = map(analogRead(A1),0,1023,1023,0);
+  potVal = map(analogRead(A1),0,1023,1024,0);
   ilguastafestestereo.poll();
   countState = setStates();
   
@@ -162,45 +162,38 @@ int setStates()
 
 void setVolume(int p)
 {
-   if(p >= 0 && p < 15)
+   Serial.println(p);
+   if(p >= 0 && p < 2)
    {
      Serial.println("Shut Down");
-     //Shut Down  
+     //Shut Down
+     digitalWrite(pinGain0, LOW);
+     digitalWrite(pinGain1, LOW);  
      analogWrite(shutRight, HIGH);
      analogWrite(shutLeft, HIGH);
    }
-   else if(p > 15 && p < 265)
-   {
-      Serial.println("LOW Volume");
-      //LOW Volume
-      analogWrite(pinGain0, HIGH);
-      analogWrite(pinGain1, HIGH);
-      digitalWrite(shutRight, HIGH);
-      digitalWrite(shutLeft, HIGH);
-      
-   }
-   else if(p > 265 && p < 520)
+   else if(p > 2 && p < 350)
    {
        Serial.println("MID-LOW Volume");
        //MID-LOW Volume
-       analogWrite(pinGain0, HIGH);
+       digitalWrite(pinGain0, LOW);
        digitalWrite(pinGain1, LOW);
-       digitalWrite(shutRight, HIGH);
+       analogWrite(shutRight, LOW);
        digitalWrite(shutLeft, HIGH);
 
     
    }
-   else if(p > 520 && p < 770)
+   else if(p > 350 && p < 700)
    {
        Serial.println("MID-HIGH Volume");
        //MID-HIGH Volume
        digitalWrite(pinGain0, LOW);
-       analogWrite(pinGain1, HIGH);
+       digitalWrite(pinGain1, LOW);
        digitalWrite(shutRight, HIGH);
-       digitalWrite(shutLeft, HIGH);
+       analogWrite(shutLeft, HIGH);
     
    }
-   else if (p > 770 && p < 1024)
+   else if (p > 700 && p < 1024)
    {
        Serial.println("HIGH Volume");
        //HIGH Volume

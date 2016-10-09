@@ -28,7 +28,7 @@ WiFiSSLClient sslClient;
 // build a new object "ilguastafesteluce"
 ArduinoCloudThing ilguastafesteluce;
 
-int pinRelay = 6;    // variable to store the servo position
+int pinRelay = 6;    // variable to store the relay position
 
 void setup() {
   Serial.begin(9600);
