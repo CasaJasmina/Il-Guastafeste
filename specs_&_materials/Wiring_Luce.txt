@@ -1,0 +1,5 @@
+
+Relay
+VCC -> 5v
+GND -> GND
+IN -> 6
