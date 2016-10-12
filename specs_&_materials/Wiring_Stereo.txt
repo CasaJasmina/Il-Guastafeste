@@ -4,29 +4,17 @@ VDD -> 5v
 GND -> GND
 L+ -> dac0
 L- -> GND
-G0 -> 2
-G1 -> 3
+G0 -> 5
+G1 -> 4
+SR -> 3
+SL -> 2
 
-Micro-SD
 
-3v -> VCC
-GND -> GND
-SCLK -> 9
-DO -> 10
-DI -> 8
-CS -> 4
-
-Microphone
-DO -> A1
-+ -> 5v
-G -> GND
-
-Thermal Printer
-GND -> GND
-RX -> 14
-5v -> 5v
-
-Servo
+Potentiometer
+A -> A1
 GND -> GND
 5v -> 5v
-D -> 5
+
+Jack
+right -> R+
+left -> L+
